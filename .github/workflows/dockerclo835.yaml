@@ -3,9 +3,7 @@ name: dog1 and cat1 images push to ecr
 on:
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
-
+ 
 jobs:
 
   build:
