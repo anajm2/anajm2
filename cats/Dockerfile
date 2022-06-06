@@ -2,6 +2,7 @@ FROM nginx
 EXPOSE 80
 RUN apt-get update -y && \
   apt-get upgrade -y && \
+  sudo apt-get install -y apt-utils && \
   apt-get install -y curl && \
   cd /tmp && \
   apt-get install awscli -y && \
